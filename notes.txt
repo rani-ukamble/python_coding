@@ -1,0 +1,13 @@
+# Input: 1 2 3 4
+arr = map(int, input().split())  # This creates an iterator
+
+# Converting it to a list if you need to store it as a list:
+arr = list(arr)  # Now arr is [1, 2, 3, 4]
+
+print(arr)  # Output: [1, 2, 3, 4]
+
+******************************************************************
+
+The line arr = map(int, input().split()) is used to take multiple integer inputs from the user in one line and store them as a list of integers.
+
+******************************************************************************

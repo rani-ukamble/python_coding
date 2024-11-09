@@ -1,0 +1,56 @@
+30, 45
+
+pytest - 21, 27, 31, 33
+
+
+28 Oct HackerRank test
+110 min 
+
+3 coding
+mcq 5
+
+
+
+
+**********************************************************************
+    
+import pytest
+from nearest_palindrome import nearest_palindrome
+
+def test_nearest_palindrome():
+    assert nearest_palindrome(12300) == 12321
+    assert nearest_palindrome(12331) == 12421
+    assert nearest_palindrome(999) == 1001
+    assert nearest_palindrome(1) == 2
+    assert nearest_palindrome(12345) == 12421
+    assert nearest_palindrome(11) == 22
+    assert nearest_palindrome(808) == 818
+
+if __name__ == "__main__":
+    pytest.main()
+Explanation:
+The nearest_palindrome function:
+Mirrors the first half of the number.
+Checks if the resulting palindrome is greater than the original.
+If not, it increments the first half and forms a new palindrome.
+The test cases use pytest to validate that the function returns the correct nearest palindrome for various input values.
+
+**********************************************************************
+
+Immutable means that something cannot be changed or modified after it is created. In Python, certain data types, like strings, tuples, and numbers, are immutable, meaning that once you create them, you cannot modify them directly.
+
+For example, if you have a string:
+
+python
+Copy code
+s = "hello"
+You cannot change individual characters in the string s because strings are immutable:
+
+python
+Copy code
+s[0] = "H"  # This will raise an error
+
+**********************************************
+Counter(s1) ==>
+Enter s1: tea
+Counter({'t': 1, 'e': 1, 'a': 1})
